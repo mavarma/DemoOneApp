@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.16/angular.min.js"></script>
+</head>
+<body ng-app="myNgApp">
+    <div ng-controller="myController">
+        {{message}}
+    </div>
+    <script>
+        var ngApp = angular.module('myNgApp', []);
+
+        ngApp.controller('myController', function ($scope, $log) {
+            $scope.message = "Hello World!";    
+			alert("hey there");
+			console.log("Hey there");
+			$log.info("HEy there !!"); 			
+        });
+    </script>
+</body>
+</html>
